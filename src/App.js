@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Arabic to roman numeral converter.</h2>
+        <h2>Arabic to roman numeral converter</h2>
 
         <input value={inputText} onChange={handleChange} />
 
