@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('title is presented', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleEl = screen.getByText(/Arabic to roman numeral converter/i);
+  expect(titleEl).toBeInTheDocument();
 });
