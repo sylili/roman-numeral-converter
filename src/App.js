@@ -18,7 +18,7 @@ function App() {
 
         <input value={inputText} onChange={handleChange} />
 
-        <p>Result: {romanResult}</p>
+        <p>{romanResult || 'Enter a number!'}</p>
       </header>
     </div>
   );
