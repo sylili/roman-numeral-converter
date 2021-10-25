@@ -1,4 +1,4 @@
-import { convertToRoman } from './converter';
+import { convertToArabic, convertToRoman } from './converter';
 
 test('1 converts to I', () => {
   expect(convertToRoman(1)).toBe('I');
@@ -57,4 +57,24 @@ test('950 converts to CML', () => {
 
 test('return empty string on empty input', () => {
   expect(convertToRoman('')).toBe('');
+});
+
+test('I converts to 1', () => {
+  expect(convertToArabic('I')).toBe(1);
+});
+
+test('II converts to 2', () => {
+  expect(convertToArabic('II')).toBe(2);
+});
+
+test('III converts to 3', () => {
+  expect(convertToArabic('III')).toBe(3);
+});
+
+test('MMDCCCXLVII converts to 2847', () => {
+  expect(convertToArabic('MMDCCCXLVII')).toBe(2847);
+});
+
+test('CML converts to 950', () => {
+  expect(convertToArabic('CML')).toBe(950);
 });
