@@ -24,13 +24,13 @@ function App() {
 
         <input value={inputTextInArabic} onChange={handleChangeInArabic} />
 
-        <p>{romanResult || 'Enter a number!'}</p>
+        <p>{romanResult || 'Enter an arabic number!'}</p>
 
         <h2>Roman to arabic numeral converter</h2>
 
         <input value={inputTextInRoman} onChange={handleChangeInRoman} />
 
-        <p>{arabicResult || 'Enter a number!'}</p>
+        <p>{arabicResult || 'Enter a roman numeral!'}</p>
       </header>
     </div>
   );

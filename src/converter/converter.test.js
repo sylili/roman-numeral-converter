@@ -78,3 +78,23 @@ test('MMDCCCXLVII converts to 2847', () => {
 test('CML converts to 950', () => {
   expect(convertToArabic('CML')).toBe(950);
 });
+
+test('CMLL is an invalid roman numeral', () => {
+  expect(convertToArabic('CMLL')).toBe('This is an invalid roman numeral!');
+});
+
+test('11 is an invalid roman numeral', () => {
+  expect(convertToArabic('11')).toBe('This is an invalid roman numeral!');
+});
+
+test('4000 cannot be converted to roman', () => {
+  expect(convertToRoman(4000)).toBe(
+    'Greatest number we can form in Roman numerals is 3999!'
+  );
+});
+
+test('0 cannot be converted to roman', () => {
+  expect(convertToRoman(0)).toBe(
+    'Lowest number we can form in Roman numerals is 1!'
+  );
+});
